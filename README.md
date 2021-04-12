@@ -1,6 +1,8 @@
+### Display Manager
 
+- lightdm
 
-Enable services
+### Enable services
 
 - Docker
 - Httpd
