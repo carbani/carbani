@@ -1,8 +1,6 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
-alsa-utils
 amd-ucode
-archinstall
 arch-install-scripts
 b43-fwcutter
 bind-tools
@@ -21,7 +19,6 @@ dmraid
 dnsmasq
 dosfstools
 edk2-shell
-efibootmgr
 espeakup
 ethtool
 exfatprogs
@@ -64,7 +61,6 @@ ndisc6
 nfs-utils
 nilfs-utils
 nmap
-ntfs-3g
 nvme-cli
 openconnect
 openssh
@@ -103,18 +99,110 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
-zsh
 
-# === Network =======
+
+# ================================================================
+# === Base =======
 base
+base-devel
 
 
 # === Network =======
 networkmanager
+network-manager-applet
+
+
+# === Hardware video =======
+nvidia
+nvidia-utils
+nvidia-settings
+mesa-demos
+
+
+# === Grub =======
+grub
+efibootmgr
+
+
+# === Configs =======
+os-prober
+
+
+# === Audio =======
+alsa-firmware
+alsa-lib
+alsa-plugins
+alsa-utils
+pulseaudio
+pulseaudio-alsa
+pavucontrol
+playerctl
+festival
+festival-us
+
+
+# === Filesystem =======
+sshfs
+ntfs-3g
+mtpfs
+gvfs
+gvfs-mtp
+gvfs-gphoto2
+
+
+# ================================================================
+# === Apps =======
+chromium
 
 
 # === Editor =======
 nano
 vim
-neovim
-emacs
+
+
+# === Xorg =======
+xorg-server
+xorg-apps
+xorg-xinit
+
+
+# === Virtualbox =======
+virtualbox-guest-utils
+
+
+# === Console =======
+xclip
+xsel
+youtube-dl
+htop
+neofetch
+zsh
+
+
+# === Fonts =======
+awesome-terminal-fonts
+ttf-fira-code
+ttf-liberation
+ttf-roboto
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+
+
+# ================================================================
+# === lightdm =======
+lightdm
+lightdm-gtk-greeter
+lightdm-gtk-greeter-settings
+lightdm-webkit2-greeter
+
+
+# === I3 =======
+i3-gaps
+i3lock
+i3blocks
+
+
+# === Plasma =======
+plasma-meta
