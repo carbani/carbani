@@ -1,5 +1,7 @@
 ### [Download ISO](https://github.com/joaopedroaats/arch/releases/)
 
+## Install
+- calamares
 
 
 #### Pre-installed

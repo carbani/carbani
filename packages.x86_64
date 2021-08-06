@@ -85,7 +85,6 @@ syslinux
 systemd-resolvconf
 tcpdump
 terminus-font
-termite-terminfo
 testdisk
 tmux
 udftools
@@ -128,31 +127,6 @@ efibootmgr
 os-prober
 
 
-# === Audio =======
-alsa-firmware
-alsa-lib
-alsa-plugins
-alsa-utils
-pulseaudio
-pulseaudio-alsa
-pavucontrol
-playerctl
-festival
-festival-us
-
-
-# === Filesystem =======
-sshfs
-ntfs-3g
-mtpfs
-gvfs
-gvfs-mtp
-gvfs-gphoto2
-
-
-# ================================================================
-# === Apps =======
-chromium
 
 
 # === Editor =======
@@ -166,10 +140,6 @@ xorg-apps
 xorg-xinit
 
 
-# === Virtualbox =======
-virtualbox-guest-utils
-
-
 # === Console =======
 xclip
 xsel
@@ -179,23 +149,25 @@ neofetch
 zsh
 
 
-# === Fonts =======
-awesome-terminal-fonts
-ttf-fira-code
-ttf-liberation
-ttf-roboto
-ttf-dejavu
-ttf-droid
-ttf-inconsolata
-ttf-liberation
 
 
-# ================================================================
+
+#############################################################################
+# === display manager =============================================================
+#############################################################################
+
 # === lightdm =======
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lightdm-webkit2-greeter
+
+# === sddm =======
+sddm
+
+
+
+#############################################################################
 
 
 # === I3 =======
@@ -206,3 +178,27 @@ i3blocks
 
 # === Plasma =======
 plasma-meta
+
+
+# everything above comes from archiso releng folder
+#######################################################
+###                    ALCI                         ###
+#######################################################
+
+#######################################################
+###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
+###             VIA CALAMARES CONFIG                ###
+#######################################################
+
+#alci-dwm
+#alci-dwm-nemesis
+alci-calamares
+#alci-calamares-dev
+#alci-calamares-config
+#alci-calamares-config-btrfs
+#alci-calamares-config-dev
+#alci-calamares-config-lts
+#alci-calamares-config-pure
+#alci-calamares-config-zen
+xterm
+
