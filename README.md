@@ -1,7 +1,16 @@
-### [Download ISO](https://github.com/joaopedroaats/arch/releases/)
+
+- Download the latest [release](https://github.com/joaopedroaats/arch/releases/)
+
 
 ## Install
 - calamares
+  - netinstall
+    - Download packages
+    - Download de / wm
+
+
+## Display manager
+lightdm with webkit2 theme
 
 
 #### Pre-installed
@@ -10,6 +19,16 @@
 - lightdm
 - networkmanager
 - grub
+- nvidia
+- nvidia-utils
+- nvidia-settings
+- firefox
+- nano
+- vim
+- i3-gaps
+- plasma-meta
+- alsa
+- pulseaudio
 
 
 #### Pacman

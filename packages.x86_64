@@ -103,7 +103,6 @@ xl2tpd
 # ================================================================
 # === Base =======
 base
-base-devel
 
 
 # === Network =======
@@ -118,6 +117,12 @@ nvidia-settings
 mesa-demos
 
 
+# === Xorg =======
+xorg-server
+xorg-apps
+xorg-xinit
+
+
 # === Grub =======
 grub
 efibootmgr
@@ -127,17 +132,18 @@ efibootmgr
 os-prober
 
 
+# === Virtualbox =======
+virtualbox-guest-utils
+
+
+# === Apps =======
+firefox
 
 
 # === Editor =======
 nano
 vim
-
-
-# === Xorg =======
-xorg-server
-xorg-apps
-xorg-xinit
+neovim
 
 
 # === Console =======
@@ -149,12 +155,7 @@ neofetch
 zsh
 
 
-
-
-
-#############################################################################
 # === display manager =============================================================
-#############################################################################
 
 # === lightdm =======
 lightdm
@@ -162,43 +163,39 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lightdm-webkit2-greeter
 
+
 # === sddm =======
 sddm
-
-
-
-#############################################################################
-
-
-# === I3 =======
-i3-gaps
-i3lock
-i3blocks
 
 
 # === Plasma =======
 plasma-meta
 
 
-# everything above comes from archiso releng folder
-#######################################################
-###                    ALCI                         ###
-#######################################################
-
 #######################################################
 ###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
-#alci-dwm
-#alci-dwm-nemesis
 alci-calamares
-#alci-calamares-dev
-#alci-calamares-config
-#alci-calamares-config-btrfs
-#alci-calamares-config-dev
-#alci-calamares-config-lts
-#alci-calamares-config-pure
-#alci-calamares-config-zen
 xterm
 
+# alci-dwm
+# alci-dwm-nemesis
+# alci-calamares-dev
+# alci-calamares-config
+# alci-calamares-config-btrfs
+# alci-calamares-config-dev
+# alci-calamares-config-lts
+# alci-calamares-config-pure
+# alci-calamares-config-zen
+
+
+# === Audio =======
+# alsa-firmware
+# alsa-lib
+# alsa-plugins
+# alsa-utils
+# pulseaudio
+# pulseaudio-alsa
+# pavucontrol
