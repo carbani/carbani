@@ -61,6 +61,7 @@ ndisc6
 nfs-utils
 nilfs-utils
 nmap
+ntfs-3g
 nvme-cli
 openconnect
 openssh
@@ -104,23 +105,37 @@ xl2tpd
 # === Base =======
 base
 
+wget
+
 
 # === Network =======
 networkmanager
 network-manager-applet
 
 
-# === Hardware video =======
-nvidia
-nvidia-utils
-nvidia-settings
-mesa-demos
-
 
 # === Xorg =======
 xorg-server
 xorg-apps
 xorg-xinit
+xterm
+
+
+# === video =======
+xf86-video-qxl
+#xf86-video-intel
+#xf86-video-amdgpu
+xf86-video-vesa
+xf86-video-vmware
+mesa
+
+
+# === Hardware video =======
+nvidia
+nvidia-utils
+nvidia-settings
+#mesa-demos
+
 
 
 # === Grub =======
@@ -133,10 +148,12 @@ os-prober
 
 
 # === Virtualbox =======
+open-vm-tools
 virtualbox-guest-utils
 
 
-# === Apps =======
+
+# === Apps =============================================================
 firefox
 
 
@@ -146,14 +163,6 @@ vim
 neovim
 
 
-# === Console =======
-xclip
-xsel
-youtube-dl
-htop
-neofetch
-zsh
-
 
 # === display manager =============================================================
 
@@ -161,7 +170,6 @@ zsh
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-lightdm-webkit2-greeter
 
 
 # === sddm =======
@@ -170,7 +178,7 @@ sddm
 
 # === Plasma =======
 plasma-meta
-
+konsole
 
 #######################################################
 ###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
@@ -178,17 +186,10 @@ plasma-meta
 #######################################################
 
 alci-calamares
-xterm
+#carbani-calamares
 
-# alci-dwm
-# alci-dwm-nemesis
-# alci-calamares-dev
-# alci-calamares-config
-# alci-calamares-config-btrfs
-# alci-calamares-config-dev
-# alci-calamares-config-lts
-# alci-calamares-config-pure
-# alci-calamares-config-zen
+
+
 
 
 # === Audio =======

@@ -1,4 +1,5 @@
 sudo umount ~/archiso/arch-work/x86_64/airootfs/sys
+sudo umount ~/archiso/arch-work/x86_64/airootfs/proc
 sudo umount ~/archiso/arch-work/x86_64/airootfs/sys/*
 sudo umount ~/archiso/arch-work/x86_64/airootfs/sys/firmware/efi/efivars
 
