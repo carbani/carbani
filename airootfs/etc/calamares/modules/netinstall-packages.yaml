@@ -1,30 +1,33 @@
-- name: "Default"
-  description: "Default group"
-  hidden: true
-  selected: true
-  critical: false
-  packages:
-    - base-devel
 - name: "Common packages"
-  description: "Recommended. Don't change unless you know what you're doing (generic)."
+  description: "Recommended packages."
   hidden: false
   selected: true
   critical: true
   packages:
-    - ntfs-3g
-    - firefox
-    - alsa-utils
-    - alsa-firmware
-    - alsa-plugins
-    - pulseaudio
-    - os-prober
-    - reflector
-    - gvfs
-    - gvfs-mtp
-    - gvfs-afc
-    - gvfs-gphoto2
-    - gvfs-nfs
-    - gvfs-smb
+    - xf86-video-fbdev
+    - xf86-video-intel
+    - xorg-xkill
+    - xorg-xrandr
+    - xorg-xinput
+    - xdg-utils
+    - xdg-user-dirs
+    - accountsservice
+    - libwnck3
+    - r8168
+    - netctl
+    - net-tools
+    - whois
+    - upower
+    - hwinfo
+    - solid
+    - haveged
+    - mlocate
+    - glances
+    - paprefs
+    - ffmpegthumbnailer
+    - poppler-glib
+    - libgsf
+    - redshift
 - name: "Development"
   description: "Editors, misc"
   hidden: false
@@ -34,8 +37,60 @@
     - nano
     - emacs
     - ripgrep
-    - vim
-    - neovim
-    - intellij-idea-community-edition
     - docker
     - wakatime
+    - python
+- name: "Fonts"
+  description: "Fonts Bundle"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - font-manager
+    - ttf-dejavu
+    - ttf-liberation
+    - ttf-inconsolata
+    - ttf-bitstream-vera
+    - ttf-roboto
+    - ttf-opensans
+    - noto-fonts
+    - cantarell-fonts
+    - opendesktop-fonts
+    - awesome-terminal-fonts
+    - adobe-source-han-sans-jp-fonts
+    - adobe-source-han-sans-kr-fonts
+    - adobe-source-han-sans-cn-fonts
+- name: "Bluetooth"
+  description: "Short-range wireless technology standard (bluez, blueberry)"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - bluez
+    - bluez-libs
+    - bluez-utils
+    - blueberry
+- name: "Audio"
+  description: "(alsa, pulseaudio, pavucontrol, playerctl...)"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - playerctl
+    - alsa-firmware
+    - alsa-plugins
+    - alsa-lib
+    - gstreamer
+    - libdvdcss
+    - pulseaudio
+    - pulseaudio-alsa
+    - pavucontrol
+- name: "Graphic editor"
+  description: "(krita, inkspace)"
+  hidden: false
+  selected: true
+  critical: false
+  packages:
+    - krita
+    - inkscape
+

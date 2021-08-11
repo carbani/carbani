@@ -1,8 +1,11 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
+# releng (09/08/2020)
+alsa-utils
 amd-ucode
 arch-install-scripts
-b43-fwcutter
+archinstall
+base
 bind-tools
 brltty
 broadcom-wl
@@ -10,22 +13,25 @@ btrfs-progs
 clonezilla
 cloud-init
 crda
+cryptsetup
+dhclient
 darkhttpd
 ddrescue
-dhclient
+dnsmasq
 #dhcpcd
 diffutils
 dmraid
-dnsmasq
 dosfstools
+e2fsprogs
 edk2-shell
-espeakup
 ethtool
+efibootmgr
+espeakup
 exfatprogs
+gnu-netcat
 f2fs-tools
 fatresize
 fsarchiver
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -33,14 +39,18 @@ grml-zsh-config
 hdparm
 intel-ucode
 ipw2100-fw
+iwd
 ipw2200-fw
 irssi
-iwd
+iw
 jfsutils
 kitty-terminfo
+less
 lftp
-linux
 linux-atm
+libfido2
+libusb-compat
+linux
 linux-firmware
 livecd-sounds
 lsscsi
@@ -54,32 +64,37 @@ memtest86+
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
+ndisc6
 modemmanager
 mtools
+nano
 nbd
-ndisc6
 nfs-utils
 nilfs-utils
 nmap
+openconnect
 ntfs-3g
 nvme-cli
-openconnect
 openssh
 openvpn
 partclone
 parted
 partimage
+pcsclite
 ppp
 pptpclient
+pv
+sof-firmware
+qemu-guest-agent
+rp-pppoe
 reflector
 reiserfsprogs
-rp-pppoe
 rsync
 rxvt-unicode-terminfo
+screen
 sdparm
 sg3_utils
 smartmontools
-sof-firmware
 squashfs-tools
 sudo
 syslinux
@@ -88,115 +103,148 @@ tcpdump
 terminus-font
 testdisk
 tmux
-udftools
+tpm2-tss
 usb_modeswitch
+udftools
 usbmuxd
 usbutils
+vim
+#virtualbox-guest-utils-nox
 vpnc
-wireless-regdb
-wireless_tools
+dnsutils
 wpa_supplicant
 wvdial
+wireless-regdb
+wireless_tools
 xfsprogs
 xl2tpd
+zsh
+dialog
 
-
-# ================================================================
-# === Base =======
-base
-
+#++
+linux-headers
+ntp
 wget
+grub
+os-prober
 
 
-# === Network =======
-networkmanager
-network-manager-applet
+# ----------------------------------------------------------------------------------------
+# ========================================================================================
+# ----------------------------------------------------------------------------------------
 
 
+# keyring =======
+archlinux-keyring
+gnome-keyring
 
-# === Xorg =======
+
+# Xorg =======
 xorg-server
 xorg-apps
 xorg-xinit
 xterm
 
 
-# === video =======
+# video =======
 xf86-video-qxl
-#xf86-video-intel
-#xf86-video-amdgpu
+xf86-video-intel
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-vmmouse
+xf86-input-void
+xf86-video-amdgpu
+xf86-video-ati
 xf86-video-vesa
 xf86-video-vmware
 mesa
 
 
-# === Hardware video =======
+# Hardware video =======
 nvidia
 nvidia-utils
 nvidia-settings
 #mesa-demos
 
 
-
-# === Grub =======
-grub
-efibootmgr
-
-
-# === Configs =======
-os-prober
-
-
-# === Virtualbox =======
+# Virtualbox =======
 open-vm-tools
 virtualbox-guest-utils
 
 
-
-# === Apps =============================================================
-firefox
-
-
-# === Editor =======
-nano
-vim
-neovim
-
-
-
-# === display manager =============================================================
-
-# === lightdm =======
+# lightdm =======
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 
 
-# === sddm =======
-sddm
+# network =======
+avahi
+nss-mdns
+mobile-broadband-provider-info
+networkmanager-openconnect
+networkmanager
+network-manager-applet
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+openresolv
+#samba
 
 
-# === Plasma =======
-plasma-meta
-konsole
+# file management =======
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+mtpfs
+udiskie
+udisks2
+xdg-user-dirs
 
-#######################################################
-###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
-###             VIA CALAMARES CONFIG                ###
-#######################################################
+
+# ----------------------------------------------------------------------------------------
+# === system ===============================================================================
+# ----------------------------------------------------------------------------------------
+
+# desktop =======
+redshift
+
+
+# keyboard =======
+xkeycaps
+
+
+# clock =======
+ntp
+
+
+
+# ----------------------------------------------------------------------------------------
+# === Apps ===============================================================================
+# ----------------------------------------------------------------------------------------
+
+firefox
+neovim
+
+
+# ----------------------------------------------------------------------------------------
+# === liveuser (calamares) ===============================================================
+# ----------------------------------------------------------------------------------------
 
 alci-calamares
 #carbani-calamares
 
 
+# Plasma =======
+plasma-meta
+konsole
+dolphin
+dolphin-plugins
+tumbler
 
-
-
-# === Audio =======
-# alsa-firmware
-# alsa-lib
-# alsa-plugins
-# alsa-utils
-# pulseaudio
-# pulseaudio-alsa
-# pavucontrol
+# === sddm =======
+sddm

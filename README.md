@@ -1,16 +1,22 @@
-
 - Download the latest [release](https://github.com/joaopedroaats/arch/releases/)
 
 
 ## Install
-- calamares
-  - netinstall
-    - Download packages
-    - Download de / wm
 
+- netinstall
+  - Download packages
+    - Common packages
+    - Development
+    - Fonts
+    - Bluetooth
+    - Audio
+    - Graphic editor
+  - Download de / wm
+    - Plasma
+    - XFCE4
+    - Gnome
+    - i3wm
 
-## Display manager
-lightdm with webkit2 theme
 
 
 #### Pre-installed
@@ -18,25 +24,7 @@ lightdm with webkit2 theme
 - base-devel
 - lightdm
 - networkmanager
-- grub
 - nvidia
 - nvidia-utils
 - nvidia-settings
-- firefox
-- nano
-- vim
-- i3-gaps
-- plasma-meta
-- alsa
-- pulseaudio
 
-
-#### Pacman
-- multilib enable
-
-
-#### Enable services
-- Docker
-- Httpd
-- Mysqld
-- Network Manager

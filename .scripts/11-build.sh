@@ -1,5 +1,5 @@
-folderWork=~/archiso/arch-work
 folderOut=~/archiso/arch/.iso
+folderWork=~/archiso/arch/.isowork
 projectFolder=~/archiso/arch
 
 sh ~/archiso/arch/.scripts/30-remove.sh

@@ -86,7 +86,7 @@
     - adwaita-icon-theme
     - xdg-user-dirs-gtk
     - diffuse
-- name: "i3wm (gaps)"
+- name: "i3gaps"
   description: "Tiling Window Manager - primarily targeted at developers and advanced users. "
   hidden: false
   selected: false

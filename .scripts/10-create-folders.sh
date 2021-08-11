@@ -1,2 +1,2 @@
-mkdir ~/archiso/arch-work
 mkdir ~/archiso/arch/.iso
+mkdir ~/archiso/arch/.isowork
