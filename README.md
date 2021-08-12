@@ -28,3 +28,7 @@
 - nvidia-utils
 - nvidia-settings
 
+#### Pre-config files
+- /usr/lib/NetworkManager/conf.d/20-connectivity.conf
+- /etc/systemd/logind.conf
+- /etc/xdg/reflector/reflector.conf
