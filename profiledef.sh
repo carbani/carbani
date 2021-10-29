@@ -23,5 +23,5 @@ file_permissions=(
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/displaymanager-check"]="0:0:755"
-  ["/var/lib/iwd"]="0:0:0700"
+  # ["/var/lib/iwd"]="0:0:0700"
 )

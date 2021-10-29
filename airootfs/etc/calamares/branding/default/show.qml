@@ -15,68 +15,190 @@ Presentation
 {
     id: presentation
 
-    function nextSlide() {
-        console.log("QML Component (default slideshow) Next slide");
-        presentation.goToNextSlide();
-    }
-
     Timer {
-        id: advanceTimer
-        interval: 5000
-        running: presentation.activatedInCalamares
+        interval: 10000
+        running: true
         repeat: true
-        onTriggered: nextSlide()
+        onTriggered: presentation.goToNextSlide();
+    }
+
+
+    Slide {
+
+        anchors.fill: parent
+        anchors.verticalCenterOffset: 0
+
+        Image {
+            id: background1
+            source: "1cats-dariasha911.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@dariasha911"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
     }
 
     Slide {
 
-    anchors.fill: parent
-    anchors.verticalCenterOffset: 0
-
-    Image {
-        id: background1
-        source: "1-welcometo.png"
-        width: parent.width; height: parent.height
-        horizontalAlignment: Image.AlignCenter
-        verticalAlignment: Image.AlignTop
-        fillMode: Image.Stretch
         anchors.fill: parent
-    	}
+        anchors.verticalCenterOffset: 0
 
-    Text {
-        anchors.horizontalCenter: background.horizontalCenter
-        anchors.top: background.bottom
-        text: "Welcome to"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
+        Image {
+            id: background2
+            source: "2cats-ludemeula.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@ludemeula"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
     }
 
     Slide {
 
-    anchors.fill: parent
-    anchors.verticalCenterOffset: 0
-
-    Image {
-        id: background2
-        source: "2-alci.png"
-        width: parent.width; height: parent.height
-        horizontalAlignment: Image.AlignCenter
-        verticalAlignment: Image.AlignTop
-        fillMode: Image.Stretch
         anchors.fill: parent
-    	}
+        anchors.verticalCenterOffset: 0
 
-    Text {
-        anchors.horizontalCenter: background.horizontalCenter
-        anchors.top: background.bottom
-        text: "ALCI"
-        wrapMode: Text.WordWrap
-        width: presentation.width
-        horizontalAlignment: Text.Center
-    	}
+        Image {
+            id: background3
+            source: "3cats-kstonematheson.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@kstonematheson"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
     }
+
+    Slide {
+
+        anchors.fill: parent
+        anchors.verticalCenterOffset: 0
+
+        Image {
+            id: background4
+            source: "4cats-allexx54.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@allexx54"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
+    }
+
+
+
+    Slide {
+
+        anchors.fill: parent
+        anchors.verticalCenterOffset: 0
+
+        Image {
+            id: background5
+            source: "5cats-ejleusink.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@ejleusink"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
+    }
+
+
+
+    Slide {
+
+        anchors.fill: parent
+        anchors.verticalCenterOffset: 0
+
+        Image {
+            id: background6
+            source: "6cats-ejleusink.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@ejleusink"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
+    }
+
+
+
+    Slide {
+
+        anchors.fill: parent
+        anchors.verticalCenterOffset: 0
+
+        Image {
+            id: background7
+            source: "7cats-wildewoodstudio.jpg"
+            width: parent.width; height: parent.height
+            horizontalAlignment: Image.AlignCenter
+            verticalAlignment: Image.AlignTop
+            fillMode: Image.Stretch
+            anchors.fill: parent
+        }
+        Text {
+            anchors.horizontalCenter: background.horizontalCenter
+            anchors.top: background.bottom
+            text: "unsplash.com/@wildewoodstudio"
+            wrapMode: Text.WordWrap
+            width: presentation.width
+            horizontalAlignment: Text.Center
+        }
+    }
+
+
+
 
 
     // When this slideshow is loaded as a V1 slideshow, only
@@ -85,6 +207,7 @@ Presentation
     // In V2, also the onActivate() and onLeave() methods are called.
     // These example functions log a message (and re-start the slides
     // from the first).
+
     function onActivate() {
         console.log("QML Component (default slideshow) activated");
         presentation.currentSlide = 0;
@@ -93,5 +216,4 @@ Presentation
     function onLeave() {
         console.log("QML Component (default slideshow) deactivated");
     }
-
 }
