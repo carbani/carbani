@@ -1,22 +1,10 @@
-- Download the latest [release](https://github.com/joaopedroaats/arch/releases/)
+# Carbani Installer
+![packages](./.github/images/02-packages.png)
 
+[wiki](https://github.com/joaopedroaa/arch/wiki)
 
-## Install
-
-- netinstall
-  - Download packages
-    - Common packages
-    - Development
-    - Fonts
-    - Bluetooth
-    - Audio
-    - Graphic editor
-  - Download de / wm
-    - Plasma
-    - XFCE4
-    - Gnome
-    - i3wm
-
+### Download iso
+- [github](https://github.com/joaopedroaats/arch/releases/)
 
 
 #### Pre-installed
@@ -27,8 +15,3 @@
 - nvidia
 - nvidia-utils
 - nvidia-settings
-
-#### Pre-config files
-- /usr/lib/NetworkManager/conf.d/20-connectivity.conf
-- /etc/systemd/logind.conf
-- /etc/xdg/reflector/reflector.conf
